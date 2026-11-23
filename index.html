@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Etch-a-Sketch – Ashkar Siyad</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <h1>Etch-a-Sketch</h1>
+
+    <div class="controls">
+      <button class="btn btn--primary" id="sizeBtn" type="button">New grid size</button>
+      <div class="modes" role="radiogroup" aria-label="Colour mode">
+        <label><input type="radio" name="mode" value="black" checked> Black</label>
+        <label><input type="radio" name="mode" value="rainbow"> Random colours</label>
+        <label><input type="radio" name="mode" value="darken"> Darken</label>
+      </div>
+      <button class="btn" id="clearBtn" type="button">Clear</button>
+    </div>
+
+    <p class="info" id="info"></p>
+
+    <!-- The squares are created by JavaScript (createGrid) -->
+    <div class="board" id="board" aria-label="Drawing board"></div>
+
+    <p class="foot">Move your mouse over the board to draw · <a href="https://github.com/Ashkar369/odin-etch-a-sketch">Code on GitHub</a></p>
+  </main>
+</body>
+</html>
